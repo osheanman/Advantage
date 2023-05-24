@@ -74,3 +74,6 @@ end
 gem 'bootstrap'
 
 gem "haml"
+gem "haml-rails"
+
+gem "webpacker"
