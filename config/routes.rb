@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resource :employees, only: [:index, :show]
+
+  resolve("Employees") { route_for(:employees) }
+  
   get 'welcome/index'
 
   root 'welcome#index'

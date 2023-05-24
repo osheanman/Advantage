@@ -72,3 +72,5 @@ group :test do
 end
 
 # gem 'bootstrap', '~> 5.3.0.alpha3'
+
+gem "haml"
