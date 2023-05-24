@@ -1,0 +1,22 @@
+!!!
+%html
+  %head
+    %title Advantage Geophysics
+    %meta {name: 'viewport', content='width=device-width,initial-scale=1'}
+    
+    = csrf_meta_tags
+    = csp_meta_tag
+
+    = stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+
+  %body.min-vh-100
+    .d-flex.flex-column.min-vh-100
+      .flex-shrink-0
+        = render 'layouts/header'
+      .flex-grow-1
+        .container-fluid
+          = yield
+      .flex-shrink-0
+        = render 'layouts/footer'
+
