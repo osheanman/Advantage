@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resource :employees, only: [:index, :show]
+  resources :employees, only: [:index, :show]
 
   resolve("Employees") { route_for(:employees) }
   
